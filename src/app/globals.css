@@ -1,0 +1,15 @@
+@import url('https://fonts.googleapis.com/css2?family=Instrument+Serif&display=swap');
+
+@import "tailwindcss";
+@import "tw-animate-css";
+
+
+body {
+  font-family: 'Instrument Serif', serif;
+}
+
+:root {
+  --font-sans: system-ui;
+  --font-mono: monospace;
+  --font-serif: serif;
+}
