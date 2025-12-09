@@ -18,6 +18,17 @@ const Navbar: React.FC = () => {
   const navItems: NavItem[] = [
     { name: "home", href: "/", hasDropdown: false },
     {
+      name: "RAKIB",
+      href: "/rakib",
+      hasDropdown: true,
+      dropdownItems: [
+        { name: "Rakib2", href: "/rakib/rakib2" },
+        { name: "Awards", href: "/about/awards" },
+        { name: "Mission & Vision", href: "/about/mission-vision" },
+        { name: "Reviews", href: "/about/reviews" },
+      ],
+    },
+    {
       name: "ABOUT",
       href: "/about",
       hasDropdown: true,
@@ -28,9 +39,9 @@ const Navbar: React.FC = () => {
         { name: "Reviews", href: "/about/reviews" },
       ],
     },
-    { 
-      name: "COURSE", 
-      href: "/course", 
+    {
+      name: "COURSE",
+      href: "/course",
       hasDropdown: true,
       dropdownItems: [
         { name: "Course Catalog", href: "/course/catalog" },
@@ -38,9 +49,9 @@ const Navbar: React.FC = () => {
         { name: "Course Schedule", href: "/course/schedule" },
       ]
     },
-    { 
-      name: "EVENTS", 
-      href: "/events", 
+    {
+      name: "EVENTS",
+      href: "/events",
       hasDropdown: true,
       dropdownItems: [
         { name: "Upcoming Events", href: "/events/upcoming" },
@@ -48,9 +59,9 @@ const Navbar: React.FC = () => {
         { name: "Event Calendar", href: "/events/calendar" },
       ]
     },
-    { 
-      name: "SHOP", 
-      href: "/shop", 
+    {
+      name: "SHOP",
+      href: "/shop",
       hasDropdown: true,
       dropdownItems: [
         { name: "Products", href: "/shop/products" },
@@ -58,9 +69,9 @@ const Navbar: React.FC = () => {
         { name: "Cart", href: "/shop/cart" },
       ]
     },
-    { 
-      name: "RESOURCES", 
-      href: "/resources", 
+    {
+      name: "RESOURCES",
+      href: "/resources",
       hasDropdown: true,
       dropdownItems: [
         { name: "Downloads", href: "/resources/downloads" },
@@ -68,9 +79,9 @@ const Navbar: React.FC = () => {
         { name: "Guides", href: "/resources/guides" },
       ]
     },
-    { 
-      name: "CLUB", 
-      href: "/club", 
+    {
+      name: "CLUB",
+      href: "/club",
       hasDropdown: true,
       dropdownItems: [
         { name: "Membership", href: "/club/membership" },
@@ -142,7 +153,7 @@ const Navbar: React.FC = () => {
 
       {/* Mobile Menu Overlay */}
       {isMobileMenuOpen && (
-        <div 
+        <div
           className="lg:hidden fixed inset-0 bg-black bg-opacity-50 z-40"
           onClick={() => {
             setIsMobileMenuOpen(false);
@@ -154,9 +165,8 @@ const Navbar: React.FC = () => {
       {/* Mobile Menu Sidebar */}
       <div
         ref={mobileMenuRef}
-        className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 z-50 ${
-          isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
-        }`}
+        className={`lg:hidden fixed top-0 left-0 h-full w-64 bg-white shadow-lg transform transition-transform duration-300 z-50 ${isMobileMenuOpen ? 'translate-x-0' : '-translate-x-full'
+          }`}
       >
         {/* Mobile Menu Header */}
         <div className="h-16 border-b border-gray-200 flex items-center justify-between px-4">
@@ -189,18 +199,17 @@ const Navbar: React.FC = () => {
                       className="flex items-center justify-between w-full py-4 text-sm uppercase text-gray-700 hover:text-pink-600 transition duration-300"
                     >
                       <span>{item.name}</span>
-                      <svg 
-                        className={`w-4 h-4 transition-transform duration-300 ${
-                          openMobileDropdown === item.name ? 'rotate-180' : ''
-                        }`}
-                        fill="none" 
-                        stroke="currentColor" 
+                      <svg
+                        className={`w-4 h-4 transition-transform duration-300 ${openMobileDropdown === item.name ? 'rotate-180' : ''
+                          }`}
+                        fill="none"
+                        stroke="currentColor"
                         viewBox="0 0 24 24"
                       >
                         <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M19 9l-7 7-7-7" />
                       </svg>
                     </button>
-                    
+
                     {/* Mobile Dropdown Items */}
                     {openMobileDropdown === item.name && item.dropdownItems && (
                       <div className="pb-4 pl-4 space-y-3 animate-slideDown">
@@ -220,9 +229,8 @@ const Navbar: React.FC = () => {
                 ) : (
                   <Link
                     href={item.href}
-                    className={`block py-4 text-sm uppercase text-gray-700 hover:text-pink-600 transition duration-300 ${
-                      item.name === "LOG IN" ? 'font-semibold text-pink-600' : ''
-                    }`}
+                    className={`block py-4 text-sm uppercase text-gray-700 hover:text-pink-600 transition duration-300 ${item.name === "LOG IN" ? 'font-semibold text-pink-600' : ''
+                      }`}
                     onClick={handleMobileLinkClick}
                   >
                     {item.name}
