@@ -1,8 +1,8 @@
-import React from 'react';
+
 
 const DualContentCard = () => {
   return (
-    <div className="flex w-full max-w-4xl mx-auto shadow-2xl rounded-xl overflow-hidden md:mt-8">
+    <div className="flex w-full max-w-4xl mx-auto shadow-2xl rounded-xl overflow-hidden md:my-8">
       
       {/* 1. Podcast Section */}
       <div 

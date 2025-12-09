@@ -2,9 +2,26 @@
 
 import { Download, MessageSquare, Smartphone } from 'lucide-react';
 import { useState } from 'react';
+import Image from "next/image";
+import concern from '../../../../assets/our-concern.png';
 
 const CollaborationShowcase = () => {
-    // লোগোগুলোর জন্য একটি প্লেসহোল্ডার অ্যারে
+
+    const paymentIcons = [
+        'Visa', 'American Express', 'Mastercard', 'Pubali Bank', 'Dutch Bangla Bank (DBBL Nexus)',
+        'UCB (United Commercial Bank)', 'AB Bank', 'Rupali Bank', 'Bank Asia', 'Fast Cash',
+        'City Bank', 'MTB (Mutual Trust Bank)', 'A' /* Placeholder for Aktel/Airtel/etc. if logo is A-like */,
+        'Grameenphone (GPay/EasyPay)', 'Robi Cash', 'iPay', 't-cash', 'Nagad', 'bKash', 'Rocket',
+        'UPay', 'SureCash', 'Jana Gana Manana (JGM/Placeholder)', 'SSLCommerz Verified'
+    ];
+
+    const socialLinks = [
+        { icon: 'Facebook', url: '#', className: 'hover:text-blue-600' },
+        { icon: 'Twitter', url: '#', className: 'hover:text-sky-400' },
+        { icon: 'Instagram', url: '#', className: 'hover:text-pink-500' },
+        { icon: 'LinkedIn', url: '#', className: 'hover:text-blue-700' },
+    ];
+
     const brandLogos = [
         { id: 1, name: 'Logo 1', src: '/images/logo-soil.png' },
         { id: 2, name: 'Logo 2', src: '/images/logo-2.png' },
@@ -25,9 +42,9 @@ const CollaborationShowcase = () => {
     const handleSubmit = (event: React.FormEvent) => {
         event.preventDefault();
         setIsSubmitting(true);
-        
+
         console.log("Subscribed with:", { name, email });
-        
+
         // Simulate API call
         setTimeout(() => {
             setIsSubmitting(false);
@@ -71,13 +88,8 @@ const CollaborationShowcase = () => {
             {/* 3. Footer/CTA Section: STAY AHEAD OF THE GAME */}
             <div className="bg-black text-white">
 
-                {/* 1. Collaboration Showcase Section (First Image) */}
-                <section className="py-16 px-4 sm:px-6 lg:px-8 border-b border-gray-900">
-
-                </section>
-
                 {/* 2. CTA & Subscription Form Section (Second Image) */}
-                <section className="py-16 px-4 sm:px-6 lg:px-8 text-center">
+                <section className="my-8 px-4 sm:px-6 lg:px-8 text-center">
 
                     {/* Main CTA */}
                     <h3 className="text-4xl sm:text-5xl font-extrabold tracking-tight">
@@ -185,8 +197,106 @@ const CollaborationShowcase = () => {
                     </div>
                 </footer>
 
-            </div>
+                <div>
+                    <Image
+                        src={concern}
+                        alt="Our Concern"
+                        width={800}
+                        height={600}
+                        className="mx-auto"
+                    />
+                </div>
 
+                {/* footer sectiob  */}
+                <div>
+                    <div className="bg-black text-white px-4 py-8 md:py-12 flex flex-col items-center font-sans">
+
+                        {/* 1. Social Media Icons */}
+                        <div className="flex space-x-6 text-4xl mb-8">
+                            {/*
+          NOTE: You would typically use an icon library like 'react-icons' 
+          or custom SVG/font icons here. 
+          For a quick visual match, I'll use placeholders that resemble the look.
+        */}
+                            {socialLinks.map((item, index) => (
+                                <a key={index} href={item.url} className={`text-gray-400 ${item.className}`}>
+                                    {/* Using a placeholder character/symbol that is close to the visual style */}
+                                    <span className="font-extrabold text-white text-5xl">
+                                        {item.icon === 'Facebook' && 'f'}
+                                        {item.icon === 'Twitter' && 't'}
+                                        {item.icon === 'Instagram' && 'O'}
+                                        {item.icon === 'LinkedIn' && 'in'}
+                                    </span>
+                                </a>
+                            ))}
+                        </div>
+
+                        <hr className="w-full border-t border-gray-800 my-4" /> {/* Visual separator */}
+
+                        {/* 2. Payment Gateway Section */}
+                        <div className="flex flex-col md:flex-row items-center justify-center w-full max-w-6xl mb-8">
+                            <p className="text-sm font-semibold mr-4 whitespace-nowrap mb-4 md:mb-0">
+                                Pay With
+                            </p>
+
+                            {/* Payment Icons List */}
+                            <div className="flex flex-wrap justify-center gap-2">
+                                {paymentIcons.map((iconName, index) => (
+                                    <div
+                                        key={index}
+                                        className="w-12 h-8 bg-white border border-gray-300 rounded-sm flex items-center justify-center p-0.5"
+                                        title={iconName}
+                                    >
+                                        {/* In a real scenario, this would be an <img> tag pointing to the icon's source:
+                <img src={`/images/${iconName.toLowerCase().replace(/\s/g, '-')}.png`} alt={iconName} className="max-w-full max-h-full" />
+                
+                For this code, we'll use a blank white box with a light shadow 
+                to visually match the *container* of the icons.
+              */}
+                                        <div className="w-full h-full bg-contain bg-center bg-no-repeat opacity-0">
+                                            {/* Visual placeholder for image content */}
+                                        </div>
+                                    </div>
+                                ))}
+                            </div>
+
+                            {/* Verified by SSI Commerz Logo (right side) */}
+                            <div className="flex items-center ml-4 mt-4 md:mt-0">
+                                <p className="text-sm font-semibold mr-2 whitespace-nowrap">
+                                    Verified by
+                                </p>
+                                {/* Placeholder for SSL Commerz logo container */}
+                                <div className="h-8 bg-blue-800 flex items-center justify-center px-2 py-1 rounded-sm shadow-lg border border-blue-600">
+                                    {/* Actual SSL Commerz logo image would go here */}
+                                    <span className="text-white text-xs font-bold whitespace-nowrap">
+                                        SSLCommerz
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <hr className="w-full border-t border-gray-800 my-4" /> {/* Visual separator */}
+
+                        {/* 3. Footer Text (Address, Copyright, Design) */}
+                        <div className="text-center mt-4">
+                            {/* Address */}
+                            <p className="text-base tracking-widest **BARIDHARA, DHAKA-1212, BANGLADESH**">
+                                BARIDHARA, DHAKA-1212, BANGLADESH
+                            </p>
+
+                            {/* Copyright */}
+                            <p className="text-sm my-2">
+                                &copy; COACH KANCHON - ALL RIGHTS RESERVED
+                            </p>
+
+                            {/* Design/Managed */}
+                            <p className="text-xs **text-red-600** tracking-widest">
+                                DESIGN AND MANAGED BY: GUERRILLA DIGITAL
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     );
 };

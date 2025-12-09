@@ -1,7 +1,7 @@
-import React from 'react';
+
 
 const KanchonsKeynotes = () => {
-    // Data for the two cards
+
     const keynotes = [
         {
             id: 1,
