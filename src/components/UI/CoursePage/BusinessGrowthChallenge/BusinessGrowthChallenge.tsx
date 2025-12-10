@@ -1,5 +1,5 @@
 import Image from 'next/image';
-import cover from '../.././../../assets/cover.png'
+import cover from '../.././../../assets/cover.png';
 
 const BusinessGrowthChallenge = () => {
     return (

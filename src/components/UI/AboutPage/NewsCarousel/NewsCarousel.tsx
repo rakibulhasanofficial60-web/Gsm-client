@@ -9,13 +9,13 @@ interface NewsOutlet {
     id: number;
     name: string;
     tagline: string;
-    logo: string; // Image path/URL
+    logo: string;
     bgColor: string;
 }
 
 const NewsCarousel = () => {
     const [currentIndex, setCurrentIndex] = useState<number>(0);
-    const [isAutoPlay] = useState<boolean>(true); // isAutoPlay is declared but its value is never read.
+    const [isAutoPlay] = useState<boolean>(true);
     const [isDragging, setIsDragging] = useState<boolean>(false);
     const [startX, setStartX] = useState<number>(0);
     const carouselRef = useRef<HTMLDivElement>(null);
