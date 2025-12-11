@@ -4,6 +4,10 @@ import concert from '../../../../assets/concert.png'
 import man from '../../../../assets/man.png'
 import coatchCanchon from '../../../../assets/coatch.png'
 import certificite from '../../../../assets/yui.png'
+// import imgCoatch from '../../../../assets/k.png'
+import eventlogo from '../../../../assets/eventlogo.png'
+import eventcover from '../../../../assets/eventcover.png'
+import company from '../../../../assets/company.png'
 
 const RegistrationClosedBanner = () => {
 
@@ -78,7 +82,7 @@ const RegistrationClosedBanner = () => {
 
                 <div>
                     <div className="bg-black py-16 px-4 sm:px-6 lg:px-8 flex justify-center">
-                        <div className="w-full max-w-2xl">
+                        <div className="w-full">
 
                             {/* Title Section: Red text, centered */}
                             <div className="text-center mb-8">
@@ -91,24 +95,26 @@ const RegistrationClosedBanner = () => {
                             </div>
 
                             {/* List of Benefits */}
-                            <div className="space-y-3">
-                                {benefits.map((benefit, index) => (
-                                    // Individual List Item: Dark container, red bullet, white text
-                                    <div
-                                        key={index}
-                                        className="flex items-start bg-[#111111] p-4 rounded-md shadow-inner border border-[#1a1a1a]"
-                                    >
-                                        {/* Custom Red Bullet Point (using a span for color) */}
-                                        <span className="text-red-600 text-xl leading-none pt-0.5 mr-3 flex-shrink-0">
-                                            •
-                                        </span>
+                            <div className="flex justify-center max-w-3xl mx-auto">
+                                <div className="space-y-3 bg-[#E7000B] p-4 w-full">
+                                    {benefits.map((benefit, index) => (
+                                        // Individual List Item: Dark container, red bullet, white text
+                                        <div
+                                            key={index}
+                                            className="flex bg-[#111111] p-4 rounded-md shadow-inner border border-[#1a1a1a]"
+                                        >
+                                            {/* Custom Red Bullet Point (using a span for color) */}
+                                            <span className="text-xl text-white leading-none pt-0.5 mr-3 shrink-0">
+                                                {index + 1}
+                                            </span>
 
-                                        {/* Benefit Text */}
-                                        <p className="text-white text-lg leading-relaxed">
-                                            {benefit}
-                                        </p>
-                                    </div>
-                                ))}
+                                            {/* Benefit Text */}
+                                            <p className="text-white text-lg leading-relaxed">
+                                                {benefit}
+                                            </p>
+                                        </div>
+                                    ))}
+                                </div>
                             </div>
 
 
@@ -203,6 +209,60 @@ const RegistrationClosedBanner = () => {
                                         <button className="bg-white border-4 border-red-700 text-red-700 font-bold py-2 px-8 text-lg tracking-widest">
                                             REGISTRATION CLOSED
                                         </button>
+                                    </div>
+
+                                    {/* satisfaction main ----------------------------- */}
+                                    <div className="w-full relative">
+                                        {/* <Image src={imgCoatch}
+                                            alt="Event logo"
+                                            className="mx-auto w-[400px]"
+                                        /> */}
+
+                                        <div className="w-3xl mx-auto rounded-2xl bottom-96">
+                                            <div className="max-w-[500px] rounded-3xl md:px-4 bg-black text-white mx-auto text-center py-7">
+
+                                                <Image src={eventlogo} alt="Event Logo" className="w-28 h-20 mx-auto mb-2" />
+                                                <p className="text-2xl font-semibold">100% SATISFACTION GUARANTEED</p>
+                                                <p className="text-xl font-normal">YES I AM PERSONALLY GUARANTEEING YOUR SATISFACTION</p>
+
+                                                <p className="text-center pt-6">Brain Mastery কোর্সটিতে থিঙ্কিং ফাংশনালিটি নিয়ে একটা হলিস্টিক ভিউ পাবেন। আত্ম-উন্নয়ন নিয়ে আপনার চিন্তা-ভাবনায় একটা আমূল পরিবর্তন নিয়ে আসবে। যা আপনার ব্যক্তিত্বের সমৃদ্ধিতে দারুণ কাজে লাগবে ইনশাআল্লাহ।</p>
+
+                                                <p className="text-center pt-6">তবুও কোন কারণে কোর্সটি মনোযোগ দিয়ে করার পরেও আপনার যদি মনে হয় আপনি পুরোপুরি স্যাটিসফাইড না। তাহলে কোর্সটি কেনার ৪৮ ঘণ্টার মধ্যে আমাদের <span className="text-red-500">(WhatsApp +880 1626-761111 )</span> নাম্বারে জানালে আমরা আপনার 100% টাকা রিফান্ড করে দিবো। ইভেন আপনাকে একটি প্রশ্নও করা হবে না।</p>
+
+                                                <p className="text-center pt-6">তাই কোর্সটিতে নিশ্চিন্তে এনরোল করে শুরু করুন আপনার সাকসেস সার্ফিং। <br />
+                                                    <span className="text-red-400">আপনার উদ্যোক্তা জার্নি শুভ হোক।</span></p>
+
+                                                <p className="mx-auto text-center pt-6 border-b-2 border-red-600 pb-2.5 w-[50%]">Coatch kanchon</p>
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* কোর্স একসেস কিভাবে পাবেন? ------------------------ */}
+                                    <div className="bg-[#E7000B] text-center w-full text-white py-8">
+                                        <h2 className="text-2xl font-semibold">কোর্স একসেস কিভাবে পাবেন?</h2>
+
+                                        <p className="my-6">এটি একটি লাইভ কোর্স, যথাসময়ে প্রোগ্রামে  উপস্থিত হয়ে কোর্সে অংশগ্রহণ করার জন্য অনুরোধ রইলো।</p>
+
+                                        <p className="mt-6">পেমেন্ট কমপ্লিট করার কয়েক মিনিটের মধ্যে Confirmation <br />  ইমেইল  পেয়ে যাবেন।</p>
+
+                                        <p className="mt-6">কোর্স চলাকালীন যেকোনো সাপোর্টের জন্য কোচ কাঞ্চন একাডেমি এলামনাই ফেসবুক গ্রুপে অবশ্যই জয়েন করেবন। <br />
+                                            কোচ কাঞ্চন একাডেমি এলামনাই ফেসবুক গ্রুপ লিঙ্ক পেতে আপনি আপনার প্রোফাইল ড্যাশবোর্ড এ লগ ইন করুন ।</p>
+
+                                        <button className="border-white border-2 px-6 py-2 mt-3.5 hover:shadow-md cursor-pointer">
+                                            GO TO DASHBOARD <br />
+                                            Get instant access to your course
+                                        </button>
+                                    </div>
+
+                                    <div className="bg-white w-full">
+                                        <Image src={company}
+                                            alt="Event logo"
+                                            className="mx-auto w-[600px] my-14"
+                                        />
+
+                                        <div className="my-3.5 text-center">
+                                            <button className="bg-[#EC1C27] px-2.5 py-1.5 text-white text-xl font-semibold">Registation close</button>
+                                        </div>
                                     </div>
                                 </div>
                             </div>

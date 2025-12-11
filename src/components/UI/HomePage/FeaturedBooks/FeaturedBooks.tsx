@@ -1,3 +1,4 @@
+import Image from 'next/image';
 import rokmari from '../../../../assets/rokmari.png';
 
 const FeaturedBooks = () => {
@@ -24,7 +25,7 @@ const FeaturedBooks = () => {
 
             {/* --- Bestseller Badge --- */}
             <div className="flex items-center space-x-2 mb-16">
-                <img src={rokmari} alt="Rokomari Logo" className="h-10 w-auto" />
+               <Image src={rokmari} alt="Rokomari Logo" className="h-10 w-auto" />
                 <div className="flex flex-col items-center">
                     <span className="text-4xl font-extrabold text-white leading-none">
                         NO-1
