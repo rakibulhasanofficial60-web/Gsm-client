@@ -2,6 +2,8 @@ import Image from "next/image";
 import event from '../../../../assets/event-bg.png'
 import concert from '../../../../assets/concert.png'
 import man from '../../../../assets/man.png'
+import coatchCanchon from '../../../../assets/coatch.png'
+import certificite from '../../../../assets/yui.png'
 
 const RegistrationClosedBanner = () => {
 
@@ -109,6 +111,101 @@ const RegistrationClosedBanner = () => {
                                 ))}
                             </div>
 
+
+                            <div className="md:mt-16">
+                                <div className="min-h-screen bg-black flex flex-col items-center">
+                                    {/* Top Red Bar with Text */}
+                                    <div className="w-full text-center py-2 px-4">
+                                        <p className="text-[#ED1C24] text-sm tracking-widest font-bold">
+                                            I AM SO EXCITED TO SHARE WITH YOU
+                                        </p>
+                                    </div>
+
+                                    {/* MY SECRETS Section */}
+                                    <div className="text-center mt-6 mb-4">
+                                        <h1 className="text-white text-5xl font-extrabold tracking-wider">
+                                            MY SECRETS
+                                        </h1>
+                                        <p className="text-red-700 text-xs mt-1 underline tracking-widest">
+                                            WHAT HAVE I LEARNED LAST 5 YEARS
+                                        </p>
+                                    </div>
+
+                                    {/* Coach Image */}
+                                    <div className="mt-8">
+                                        {/* Placeholder for the image. In a real application, replace 'src' */}
+                                        <Image
+                                            src={coatchCanchon} // Replace with the actual image source
+                                            alt="Coach K. Krishna"
+                                            className="w-48 h-auto object-cover" // Adjust width as needed
+                                        />
+                                    </div>
+
+                                    {/* Coach Bio and Certifications Section */}
+                                    <div className="text-center text-white mt-8 p-4">
+                                        {/* Coach Name */}
+                                        <h2 className="text-xl font-bold mb-3">
+                                            Coach K. Krishna
+                                        </h2>
+
+                                        {/* Bio Points */}
+                                        <p className="text-xs mb-1">
+                                            Certified Hypnotist and Mind Power Coach
+                                        </p>
+                                        <p className="text-xs mb-1">
+                                            Build multiple 7-figure Businesses
+                                        </p>
+                                        <p className="text-xs mb-1">
+                                            Coached over 2,000 people
+                                        </p>
+                                        <p className="text-xs mb-1">
+                                            Won 12 National Golf Trophies
+                                        </p>
+                                        <p className="text-xs mb-1">
+                                            3 National Awards Winner
+                                        </p>
+                                        <p className="text-xs mb-1">
+                                            5 International Certification
+                                        </p>
+
+                                        {/* Certification Badges Placeholder */}
+                                        <div className="flex justify-center space-x-4 mt-6">
+                                            {/* Placeholder for a single badge. Repeat for three. */}
+                                            <div className="w-26 h-16 rounded-full flex items-center justify-center text-xs text-black p-2">
+                                                {/* Replace with actual badge image */}
+                                                <Image
+                                                    src={certificite}
+                                                    alt="loading"
+                                                    className=""
+                                                />
+                                            </div>
+                                            <div className="w-26 h-16 rounded-full flex items-center justify-center text-xs text-black p-2">
+                                                {/* Replace with actual badge image */}
+                                                <Image
+                                                    src={certificite}
+                                                    alt="loading"
+                                                    className=""
+                                                />
+                                            </div>
+                                            <div className="w-26 h-16 rounded-full flex items-center justify-center text-xs text-black p-2">
+                                                {/* Replace with actual badge image */}
+                                                <Image
+                                                    src={certificite}
+                                                    alt="loading"
+                                                    className=""
+                                                />
+                                            </div>
+                                        </div>
+                                    </div>
+
+                                    {/* Registration Closed Button */}
+                                    <div className="mt-12 mb-8">
+                                        <button className="bg-white border-4 border-red-700 text-red-700 font-bold py-2 px-8 text-lg tracking-widest">
+                                            REGISTRATION CLOSED
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
                 </div>
