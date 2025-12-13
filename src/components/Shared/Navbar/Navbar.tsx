@@ -64,9 +64,7 @@ const Navbar: React.FC = () => {
       href: "/shop",
       hasDropdown: true,
       dropdownItems: [
-        { name: "Products", href: "/shop/products" },
-        { name: "Categories", href: "/shop/categories" },
-        { name: "Cart", href: "/shop/cart" },
+        { name: "books", href: "/shop/books" }
       ]
     },
     {
@@ -244,7 +242,7 @@ const Navbar: React.FC = () => {
           <div className="px-4 py-6 border-t border-gray-200">
             <Link
               href="/signup"
-              className="block w-full px-4 py-3 text-center bg-gradient-to-r from-pink-500 to-pink-600 text-white text-sm uppercase font-medium rounded-lg hover:from-pink-600 hover:to-pink-700 transition-all duration-300 shadow-md"
+              className="block w-full px-4 py-3 text-center bg-linear-to-r from-pink-500 to-pink-600 text-white text-sm uppercase font-medium rounded-lg hover:from-pink-600 hover:to-pink-700 transition-all duration-300 shadow-md"
               onClick={handleMobileLinkClick}
             >
               SIGN UP
@@ -282,7 +280,7 @@ const Navbar: React.FC = () => {
               </Link>
 
               {item.hasDropdown && (
-                <div className="absolute top-full left-0 mt-2 min-w-[160px] bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-10">
+                <div className="absolute top-full left-0 mt-2 min-w-40 bg-white shadow-lg opacity-0 invisible group-hover:opacity-100 group-hover:visible transition duration-300 z-10">
                   {/* Check if item has specific dropdown items, otherwise use a generic list */}
                   {(
                     item.dropdownItems || [

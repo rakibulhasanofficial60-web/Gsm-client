@@ -1,0 +1,92 @@
+[
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/08/Brave-300x300.jpg?strip=all",
+        "status": "sale",
+        "title": "The Silent Observer",
+        "presentPrice": 320,
+        "pastPrice": 450,
+        "rating": 4.6,
+        "popularity": 92
+    },
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/12/massive_banner01-400x400.webp?strip=all",
+        "status": "sale",
+        "title": "Midnight Letters",
+        "presentPrice": 280,
+        "pastPrice": 380,
+        "rating": 4.4,
+        "popularity": 88
+    },
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/04/op-1-min-400x400.png?strip=all",
+        "status": "sale",
+        "title": "The Lost Manuscript",
+        "presentPrice": 350,
+        "pastPrice": 500,
+        "rating": 4.7,
+        "popularity": 95
+    },
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/04/op-1-min-400x400.png?strip=all",
+        "status": "sale",
+        "title": "Shadows of Eternity",
+        "presentPrice": 300,
+        "pastPrice": 420,
+        "rating": 4.5,
+        "popularity": 86
+    },
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/04/op-1-min-400x400.png?strip=all",
+        "status": "sale",
+        "title": "Beyond the Horizon",
+        "presentPrice": 250,
+        "pastPrice": 340,
+        "rating": 4.2,
+        "popularity": 80
+    },
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/04/op-1-min-400x400.png?strip=all",
+        "status": "sale",
+        "title": "Fragments of Memory",
+        "presentPrice": 270,
+        "pastPrice": 360,
+        "rating": 4.3,
+        "popularity": 84
+    },
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/04/op-1-min-400x400.png?strip=all",
+        "status": "sale",
+        "title": "Whispers of the Past",
+        "presentPrice": 310,
+        "pastPrice": 430,
+        "rating": 4.5,
+        "popularity": 90
+    },
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/12/massive_banner01-400x400.webp?strip=all",
+        "status": "sale",
+        "title": "A Tale Untold",
+        "presentPrice": 290,
+        "pastPrice": 400,
+        "rating": 4.3,
+        "popularity": 83
+    },
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/12/massive_banner01-400x400.webp?strip=all",
+        "status": "sale",
+        "title": "The Mystic Library",
+        "presentPrice": 330,
+        "pastPrice": 460,
+        "rating": 4.6,
+        "popularity": 91
+    },
+    {
+        "image": "https://et5tfcbyaro.exactdn.com/wp-content/uploads/2025/08/Brave-300x300.jpg?strip=all",
+        "status": "sale",
+        "title": "Echoes of Tomorrow",
+        "presentPrice": 260,
+        "pastPrice": 350,
+        "rating": 4.1,
+        "popularity": 78
+    }
+]

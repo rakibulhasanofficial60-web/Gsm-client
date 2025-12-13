@@ -1,4 +1,4 @@
-import Image from "next/image";
+import Image from "next/image"
 import event from '../../../../assets/event-bg.png'
 import concert from '../../../../assets/concert.png'
 import man from '../../../../assets/man.png'
@@ -6,7 +6,7 @@ import coatchCanchon from '../../../../assets/coatch.png'
 import certificite from '../../../../assets/yui.png'
 // import imgCoatch from '../../../../assets/k.png'
 import eventlogo from '../../../../assets/eventlogo.png'
-import eventcover from '../../../../assets/eventcover.png'
+// import eventcover from '../../../../assets/eventcover.png'
 import company from '../../../../assets/company.png'
 
 const RegistrationClosedBanner = () => {
@@ -78,7 +78,6 @@ const RegistrationClosedBanner = () => {
                     alt="loading"
                     className=" mx-auto"
                 />
-
 
                 <div>
                     <div className="bg-black py-16 px-4 sm:px-6 lg:px-8 flex justify-center">

@@ -16,7 +16,7 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 const instrumentSerif = Instrument_Serif({
-  variable: "--font-serif",
+  variable: "--font-montserrat",
   subsets: ["latin"],
   weight: ["400"],
 });
